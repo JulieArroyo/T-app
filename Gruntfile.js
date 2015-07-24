@@ -39,10 +39,10 @@ module.exports = function (grunt) {
      push: true,
      message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
    },
-   pages: {
-     options: {
-       remote: 'git@github.com:your_github_user/your_webapp.git',
-       branch: 'gh-pages'
+    pages: {
+      options: {
+      remote: 'git@github.com:JulieArroyo/T-app.git',
+      branch: 'gh-pages'
      }
    }
  },

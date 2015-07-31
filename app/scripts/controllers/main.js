@@ -8,10 +8,10 @@
  * Controller of the tAppApp
  */
 angular.module('tAppApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope,tweets) {
+    $scope.tweets = tweets.get({
+      widgetId: '626935840199999488'
+    }).success(function(data){
+      $scope.tweets = data.tweets;
+    });
   });

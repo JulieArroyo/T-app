@@ -17,6 +17,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
+    'ngStorage',//local storage
     'ngTouch',
     'ngTweets'
   ])

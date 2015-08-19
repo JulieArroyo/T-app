@@ -1,16 +1,9 @@
 <div class="page-header">
   <h1>Trump Tweets <small>Tweets by Donald J. Trump and his supporters<small></h1>
-  <p class="lead">
-    <img src="images/" alt=""><br>
+  <p class="lead" ng-bind-html="displayTweet">
+    {{displayTweet}}
 
   </p>
+  <p><a class="btn btn-primary" ng-click="refresh()"> Another</a></p>
 
 </div>
-
-<ul>
-      <li ng-repeat="tweet in tweets" ng-if="tweet.author.nickName=='@realDonaldTrump'">
-      <!--  <pre>{{tweet | json }}</pre> -->
-      <span ng-bind-html="tweet.html" >{{tweet.html}}</span>
-      <p><a class="btn btn-lg btn-success" ng-click="saveTweet(tweet)">Save this Tweet!<span class="glyphicon glyphicon-ok"></span></a></p>
-      </li>
-    </ul>

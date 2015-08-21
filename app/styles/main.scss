@@ -12,7 +12,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background:url('../images/TrumpPic2.jpg')no-repeat center center fixed;
+  color:white;
 }
+.page-header{
+  text-align:center;
+}
+.row{
+  position:relative;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -41,7 +50,13 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
 }
+
 
 .container-narrow > hr {
   margin: 30px 0;
